@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | TAP Academy Login</title>
+  <meta name="description" content="Access your TAP Academy student account, class recordings, mock interview schedules, and placement drive panels.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=1">
+</head>
+<body class="login-body">
+
+  <div class="login-wrapper">
+    
+    <!-- Left Side: Branding and Stats -->
+    <div class="login-brand-panel">
+      <div class="brand-panel-glow"></div>
+      
+      <div class="brand-panel-content">
+        <a href="index.html" class="brand-panel-logo">
+          <img src="assets/logo.svg" alt="TAP Academy Logo" class="brand-logo">
+        </a>
+        
+        <div class="brand-panel-text">
+          <h2 class="panel-headline">Master Coding. Get Hired.</h2>
+          <p class="panel-subtext">Access your classroom recordings, review mock interview feedback, and check live placement drives on your student dashboard.</p>
+        </div>
+        
+        <!-- Live Placements Ticker Widget -->
+        <div class="placements-ticker-widget">
+          <div class="ticker-header">
+            <span class="pulse-indicator"></span>
+            <span>Live Student Placements</span>
+          </div>
+          <div class="ticker-body">
+            <div class="ticker-student">
+              <strong class="student-name">Nithish Reddy</strong> placed at <strong>Accenture</strong>
+              <span class="student-package">5.3 LPA</span>
+            </div>
+            <div class="ticker-student">
+              <strong class="student-name">Vinay Kumar R.</strong> placed at <strong>Associate Eng.</strong>
+              <span class="student-package">6.8 LPA</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="panel-footer">
+          <span>&copy; 2026 Academic Clone Portal.</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Side: Login Form Card -->
+    <div class="login-form-panel">
+      <div class="mobile-logo-header">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="TAP Academy Logo" class="brand-logo">
+        </a>
+      </div>
+      
+      <div class="login-card-wrap">
+        <div class="login-card-header">
+          <h1 class="login-card-title">Student Portal Login</h1>
+          <p class="login-card-desc">Welcome back! Sign in to your dashboard panel.</p>
+        </div>
+        
+        <!-- Tabs Selector (Password vs OTP) -->
+        <div class="login-tabs">
+          <button class="login-tab-btn active" id="tab-pass-btn">Password</button>
+          <button class="login-tab-btn" id="tab-otp-btn">Mobile OTP</button>
+        </div>
+        
+        <!-- Form Container -->
+        <form class="login-main-form" id="student-login-form">
+          
+          <!-- Tab 1: Password Fields -->
+          <div class="tab-content-wrapper active" id="form-pass-fields">
+            <div class="form-group">
+              <label for="login-email">Registered Email</label>
+              <input type="email" id="login-email" placeholder="student@tapacademy.com" required>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <div class="form-group-label-row">
+                <label for="login-password">Password</label>
+                <a href="#" class="forgot-link">Forgot Password?</a>
+              </div>
+              <div class="password-input-wrap">
+                <input type="password" id="login-password" placeholder="••••••••" required>
+                <button type="button" class="password-toggle-btn" id="pass-toggle-eye" aria-label="Toggle Password Visibility">👁</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tab 2: OTP Fields (Hidden initially) -->
+          <div class="tab-content-wrapper" id="form-otp-fields">
+            <div class="form-group">
+              <label for="login-phone">10-Digit Mobile Number</label>
+              <div class="phone-input-wrap">
+                <span class="phone-prefix">+91</span>
+                <input type="tel" id="login-phone" placeholder="9876543210" pattern="[0-9]{10}">
+              </div>
+            </div>
+            <div class="form-group otp-sent-group" id="otp-entry-row" style="display: none;">
+              <label for="login-otp">Enter 6-Digit OTP</label>
+              <input type="text" id="login-otp" placeholder="123456" pattern="[0-9]{6}">
+            </div>
+            <button type="button" class="btn btn-secondary" style="width: 100%; margin-bottom: var(--spacing-12);" id="send-otp-btn">Send Verification OTP</button>
+          </div>
+          
+          <button type="submit" class="btn btn-submit" style="width: 100%;">Sign In</button>
+        </form>
+        
+        <div class="login-card-footer">
+          <span>Don't have an account? <a href="index.html#booking" class="signup-link">Register / Book Demo Session</a></span>
+        </div>
+      </div>
+      
+      <div class="mobile-portal-footer">
+        <a href="index.html" class="back-home-link">← Back to Homepage</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- App logic link -->
+  <script src="js/app.js?v=1"></script>
+</body>
+</html>

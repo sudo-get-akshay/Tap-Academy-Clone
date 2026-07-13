@@ -1,0 +1,1 @@
+import{r as t,j as n,d as l}from"./index-CMkdgqes.js";const o=t.memo(function({src:e,alt:s,className:m,priority:a=!1,...i}){return n.jsx("img",{src:e,alt:s,className:l("w-full h-full",m),loading:a?"eager":"lazy",decoding:a?"sync":"async",...i})});o.displayName="OptimizedImage";export{o as O};
