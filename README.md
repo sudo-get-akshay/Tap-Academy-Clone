@@ -3,7 +3,7 @@
 > ⚠️ **Educational clone built for learning purposes only — not affiliated with TAP Academy.**
 > Original site: https://thetapacademy.com
 
-🔗 **Live Demo:** [https://sudo-get-akshay.github.io/tap-academy-clone/](https://sudo-get-akshay.github.io/tap-academy-clone/) · **Code:** [https://github.com/sudo-get-akshay/tap-academy-clone](https://github.com/sudo-get-akshay/tap-academy-clone)
+🔗 **Live Demo:** [https://sudo-get-akshay.github.io/Tap-Academy-Clone/](https://sudo-get-akshay.github.io/Tap-Academy-Clone/) · **Code:** [https://github.com/sudo-get-akshay/Tap-Academy-Clone](https://github.com/sudo-get-akshay/Tap-Academy-Clone)
 
 ## 🎯 Goal
 Recreate the TAP Academy homepage as pixel-close as possible — training my eye for spacing, colors, typography and responsive layout.
